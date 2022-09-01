@@ -5,51 +5,78 @@ package com.fundemtals.practice.world;
 public class Zoo {
 
     public static void main(String[] args) {
+//
+//        Animal dog = new Animal("Super Rex");
+//        ////
+//        dog.setAge(5);
+//
+//        Animal dog2 = new Animal("MaxX");
+//
+//        Animal cat = new Animal("Y");
+//        cat.setName("MewMew");
+//        cat.setAge(3);
+//
+        //   Soundable -> Cow, Dow, Lion, Cat
+        //   Soundable, -> Combined  -> Lion, Cat
+        //   Climbale  ->| Combined
+        //   Climbale -> Lion, Cat
 
-        Animal dog = new Animal("Super Rex");
-        ////
-        dog.setAge(5);
+////         Animal -> Mammal -> Cat, Dog, Lion, Cow
+////                -> Fish   -> Shark,...
+////                -> birds  -> Peguines, Chiken
+////                -> Insects -> Ant, Bee
+//
+//        Animal crocodile = new Animal(); // Default is called here
+//        crocodile.setName("Crocs");
+//
+//        Animal bat = new Animal("Battie", 1);
+//        Mammal rabbit = new Mammal("Little one", 4);
+//
+//        Mammal rat = new Mammal("Anna"); // <-
+//
+//        Animal elephant = new Mammal("Dumbo");
+//
+////        bat.getUpperCasedName();  we try to call Mammal method on Animal instance method, but it fails
+////        elephant.getUpperCasedName();
+//
+//        if (bat instanceof Mammal) {
+//            System.out.println( ((Mammal) bat)  .getUpperCasedName());
+//        }
+//
+//        if (elephant instanceof Mammal) {
+//            System.out.println( ((Mammal) elephant) .getUpperCasedName());
+//        }
+//
+//
+//        Animal[] animals = { dog, dog2, cat, bat, rabbit, rat, elephant };
+//
+//        // Number is a supper class of Long, Float, Integer, Float...
+//        // Tha is why we can create an array of different types
+//        Number[] numbers = { 1, 0.5, 111223232323L, 122.66f };
+//
+//        printAnimalNames(animals);
 
-        Animal dog2 = new Animal("MaxX");
+        Soundable cat = new Cat("Snow", 4);
+        Soundable dog = new Dog("Max", 4);
+        Soundable cow = new Cow("Rose", 7);
 
-        Animal cat = new Animal("Y");
-        cat.setName("MewMew");
-        cat.setAge(3);
+        Climbable kitty = new Cat("A", 1);
 
-//         Animal -> Mammal -> Cat, Dog, Bat
-//                -> Fish   -> Shark,...
-//                -> birds  -> Peguines, Chiken
-//                -> Insects -> Ant, Bee
+        Combined lion = new Lion("Simba", 2);
+        Combined cat2 = new Cat("Cat2", 4);
 
-        Animal crocodile = new Animal(); // Default is called here
-        crocodile.setName("Crocs");
+        lion.climb();
+        lion.doSound();
 
-        Animal bat = new Animal("Battie", 1);
-        Mammal rabbit = new Mammal("Little one", 4);
+        Soundable[] animals = { cat, dog, cow };
 
-        Mammal rat = new Mammal("Anna"); // <-
+        doAnimalSounds(animals);
+    }
 
-        Animal elephant = new Mammal("Dumbo");
-
-//        bat.getUpperCasedName();  we try to call Mammal method on Animal instance method, but it fails
-//        elephant.getUpperCasedName();
-
-        if (bat instanceof Mammal) {
-            System.out.println( ((Mammal) bat)  .getUpperCasedName());
+    private static void doAnimalSounds(Soundable[] cats) {
+        for (Soundable cat: cats) {
+            cat.doSound();
         }
-
-        if (elephant instanceof Mammal) {
-            System.out.println( ((Mammal) elephant) .getUpperCasedName());
-        }
-
-
-        Animal[] animals = { dog, dog2, cat, bat, rabbit, rat, elephant };
-
-        // Number is a supper class of Long, Float, Integer, Float...
-        // Tha is why we can create an array of different types
-        Number[] numbers = { 1, 0.5, 111223232323L, 122.66f };
-
-        printAnimalNames(animals);
     }
 
     private static void printAnimalNames(Animal[] animals) {
