@@ -1,6 +1,7 @@
 package com.fundemtals.practice.world;
 
 
+import com.fundemtals.practice.Elephant;
 
 public class Zoo {
 
@@ -56,21 +57,28 @@ public class Zoo {
 //
 //        printAnimalNames(animals);
 
-        Soundable cat = new Cat("Snow", 4);
-        Soundable dog = new Dog("Max", 4);
-        Soundable cow = new Cow("Rose", 7);
+        Animal cat = new Cat("Snow", 4);
+        Animal dog = new Dog("Max", 4);
+        Animal cow = new Cow("Rose", 7);
+        Animal elephant = new Elephant();
 
         Climbable kitty = new Cat("A", 1);
 
         Combined lion = new Lion("Simba", 2);
         Combined cat2 = new Cat("Cat2", 4);
 
-        lion.climb();
-        lion.doSound();
+//        lion.climb();
+//        lion.doSound();
 
-        Soundable[] animals = { cat, dog, cow };
+        System.out.println(cat.move(4, 5, 6));
+        System.out.println(dog.move(4, 5, 6));
+        System.out.println(elephant.move(4, 5, 6));
 
-        doAnimalSounds(animals);
+//        Soundable[] animals = { cat, dog, cow };
+
+
+
+//        doAnimalSounds(animals);
     }
 
     private static void doAnimalSounds(Soundable[] cats) {

@@ -18,6 +18,12 @@ public class Mammal extends Animal {
         super(animalName, age); // -> it calls parent constructor -> ~ Animal(animalName, age)
     }
 
+    public String move(int x, int y, int z) {
+        System.out.println("Mammal method move is called");
+        return "I'm moved to " + x + ":" + y + ":" + z + " using legs";
+    }
+
+
     public String getMammalName() {
         return name;
     }

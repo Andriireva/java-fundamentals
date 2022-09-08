@@ -1,7 +1,7 @@
 package com.fundemtals.practice.world;
 
 
-public class Animal {
+public abstract class Animal {
 
     // protected are accessible in child class (does not meter child package)
     // or in the SAME package
@@ -24,6 +24,9 @@ public class Animal {
         this.age = age;
         this.description = name + " " + age;
     }
+
+    // There is one abstract method in Animal class
+    public abstract String move(int x, int y, int z);
 
     // This method is Animal's method
     public String getName() {
