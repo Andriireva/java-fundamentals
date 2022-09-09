@@ -57,4 +57,3 @@ public abstract class Animal {
         return result;
     }
 }
-

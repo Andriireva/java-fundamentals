@@ -70,9 +70,11 @@ public class Zoo {
 //        lion.climb();
 //        lion.doSound();
 
-        System.out.println(cat.move(4, 5, 6));
-        System.out.println(dog.move(4, 5, 6));
-        System.out.println(elephant.move(4, 5, 6));
+        System.out.println(Cat.numbers);
+
+//        System.out.println(cat.move(4, 5, 6));
+//        System.out.println(dog.move(4, 5, 6));
+//        System.out.println(elephant.move(4, 5, 6));
 
 //        Soundable[] animals = { cat, dog, cow };
 
