@@ -1,5 +1,8 @@
 package com.fundemtals.practice.world;
 
+import com.fundemtals.practice.world.exceptions.MyVeryStrictException;
+
 public interface Climbable {
-    public void climb();
+    // Interface method can declare that it throws Exception
+    public void climb() throws NullPointerException;  //throws MyVeryStrictException;
 }
