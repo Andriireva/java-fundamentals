@@ -4,6 +4,8 @@ import com.fundemtals.practice.world.Animal;
 import com.fundemtals.practice.world.Cat;
 import com.fundemtals.practice.world.Mammal;
 
+import java.util.Comparator;
+
 public class ComparingObjects {
 
     public static void main(String[] args) {
@@ -34,5 +36,10 @@ public class ComparingObjects {
         MammalNameComparator mammalNameComparator = new MammalNameComparator();
         int nameComparatorResult = mammalNameComparator.compare(cat1, cat2);
         System.out.println("nameComparatorResult " + nameComparatorResult);
+
+        Comparator<Mammal> ageComparator = (m1, m2) -> Integer.compare(m1.getAge(), m2.getAge());
+                // Implementation are the same in general
+        Comparator<Mammal> ageComparator2 = Comparator.comparingInt(Animal::getAge);
+        System.out.println("ageComparator lambda " + nameComparatorResult);
     }
 }
