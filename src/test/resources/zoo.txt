@@ -1,0 +1,4 @@
+cat Snow 8
+dog Max 5
+dog Speedy 11
+lion Simba 1

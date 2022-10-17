@@ -86,4 +86,12 @@ public abstract class Animal
     public int hashCode() {
         return Objects.hash(name, age, description);
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

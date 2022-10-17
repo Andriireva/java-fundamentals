@@ -1,0 +1,8 @@
+cat,Snow,8
+cat,Sonya,11
+
+
+dog,Max,5
+dog,Speedy,11
+cat,MewMew,7
+lion,Simba,1
