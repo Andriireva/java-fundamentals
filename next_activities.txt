@@ -1,0 +1,24 @@
+Not based on priority
+
+1. To look on leet code https://leetcode.com/.
+1.1. look on Algothims (sorting, searching etc... )
+2. To look on SQL data bases in general (create table, selects, insert update, delete)
+2.1. How to work with SQL from Java ( pure java ).
+2.2. Look on java.sql package. Important Connection, Driver, ResultSet, SQL executers
+3. Learn ONLY 1 programming language
+4. Learn frameworks (frame works is a set of java libs that simplified development)
+4.1. Spring (used most)
+4.2. Java EE ( used less, but it more legacy )
+4.3. Hibernate (based on Java EE )
+5. Most used type of application
+5.1. HTTP based application (Spring FW is hande here)
+5.2. Security (Spring FW is hande here)
+5.3. Unit testing (Junit + mockito)
+5.4. ORM (hibernate and spring data)
+6. Design patterns. Look on GOF (gang of 4) patterns. How it is applicable to Java.
+7. You need to be prepared to interview
+7.1. You need to know a market. (Need to the requirements for internship )
+7.2. Be ready for simple task using java core
+7.3. English ( English is coding/programmer language)
+
+

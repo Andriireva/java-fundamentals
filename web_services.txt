@@ -1,0 +1,14 @@
+There will no html, js, css.
+
+Web application > JS code -> http (websocket)
+-> BE service (web service) -> ()
+
+
+1. GIT. Collaborations. Spring boot. Maven. Gradle. Layers
+2. SQL basic. Spring JDBC.
+3. Spring services. Error handling. Transactions.
+4. Http. Spring Web. Controllers.
+5. Unit Testing. API Testing.
+6. Hibernate. Spring data.
+7. Spring security. Basic authentication. Audit data.
+8. JMS. SQL migration system.
